@@ -1,0 +1,17 @@
+{
+  "name": "proxy-class",
+  "version": "0.0.1",
+  "description": "Proxy Class for javascript/coffeescript",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wkf/proxy-class.git"
+  },
+  "keywords": [
+    "proxy",
+    "class",
+    "utility"
+  ],
+  "author": "William K Farrell",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
