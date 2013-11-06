@@ -6,18 +6,18 @@ A Proxy Class for wrapping javascript/coffeescript classes and adding functional
 
 Example:
 
-class LogProxy extends Proxy
-  wrap: ->
-    console.log("Calling #{@name}")
-    super
+    class LogProxy extends Proxy
+      wrap: ->
+        console.log("Calling #{@name}")
+        super
 
-class A
-  constructor: ->
-    @property = 'world'
+    class A
+      constructor: ->
+        @property = 'world'
 
-  hello: -> @property
+      hello: -> @property
 
-_A = new LogProxy(A)
+    _A = new LogProxy(A)
 
-a  = new _A # outputs 'Calling constructor'
-a.hello()   # outputs 'Calling hello', returns 'world'
+    a  = new _A # outputs 'Calling constructor'
+    a.hello()   # outputs 'Calling hello', returns 'world'
